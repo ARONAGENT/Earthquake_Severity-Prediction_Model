@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .container {
+            background: white;
+            max-width: 500px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #006847;
+        }
+
+        .result-box {
+            font-size: 20px;
+            font-weight: bold;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        .error {
+            background-color: #ffcccc;
+            color: #d30000;
+        }
+
+        .high {
+            background-color: #ffebcc;
+            color: #dd7500;
+        }
+
+        .low {
+            background-color: #ccffcc;
+            color: #008000;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            text-decoration: none;
+            background-color: #4aa5e3;
+            color: white;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        a:hover {
+            background-color: #007bbd;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Earthquake Severity Prediction</h2>
+
+        {% if result %}
+            {% if result > 10 %}
+            <p class="result-box high">⚠️ Predicted Severity: <strong>{{ result }}</strong></p>
+                <p>High chances of severity. Take precautions.</p>       
+             {% elif result > 6 %}
+                <p class="result-box high">⚠️ Predicted Severity: <strong>{{ result }}</strong></p>
+                <p>High chances of severity. Take precautions.</p>
+            {% elif result < 5 %}
+                <p class="result-box low">✅ Predicted Severity: <strong>{{ result }}</strong></p>
+                <p>Low severity risk.</p>
+            {% else %}
+                <p class="result-box">Predicted Severity: <strong>{{ result }}</strong></p>
+            {% endif %}
+        {% else %}
+            <p>No prediction available.</p>
+        {% endif %}
+
+        <a href="/">⬅️ Go Back</a>
+    </div>
+
+</body>
+</html>

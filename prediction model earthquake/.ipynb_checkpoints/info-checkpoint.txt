@@ -1,0 +1,81 @@
+# Define the model description
+model_info = """
+Earthquake Severity Prediction Model
+===================================
+
+1. Purpose:
+This machine learning model predicts the "Severity Normalized" of earthquake impacts in Nepal based on key factors like hazard intensity, exposure, housing conditions, poverty levels, and vulnerability.
+
+2. Input Features:
+- Hazard (Intensity): Seismic hazard level
+- Exposure: Population/assets at risk
+- Housing: Structural vulnerability
+- Poverty: Socioeconomic status
+- Vulnerability: Combined risk factors
+
+3. Output:
+- Predicted Severity Normalized (0-1 scale where higher values indicate more severe impacts)
+
+4. Model Type:
+- Multiple Linear Regression (supervised learning)
+
+5. Key Metrics:
+- R² Score: Measures goodness of fit (1 = perfect prediction)
+- RMSE: Average prediction error magnitude
+- MAE: Mean absolute error
+
+6. Applications:
+- Disaster preparedness planning
+- Resource allocation for relief efforts
+- Risk assessment for infrastructure projects
+
+7. Limitations:
+- Assumes linear relationships between features
+- Accuracy depends on data quality
+- Doesn't account for unseen catastrophic events
+
+Model developed using Python scikit-learn.
+"""
+
+# Write to info.txt
+with open("info.txt", "w") as file:
+    file.write(model_info)
+
+print("Model information saved to info.txt")
+
+
+Earthquake Severity Prediction Model
+===================================
+
+1. Purpose:
+This machine learning model predicts the "Severity Normalized" of earthquake impacts in Nepal based on key factors like hazard intensity, exposure, housing conditions, poverty levels, and vulnerability.
+
+2. Input Features:
+- Hazard (Intensity): Seismic hazard level
+- Exposure: Population/assets at risk
+- Housing: Structural vulnerability
+- Poverty: Socioeconomic status
+- Vulnerability: Combined risk factors
+
+3. Output:
+- Predicted Severity Normalized (0-1 scale where higher values indicate more severe impacts)
+
+4. Model Type:
+- Multiple Linear Regression (supervised learning)
+
+5. Key Metrics:
+- R² Score: Measures goodness of fit (1 = perfect prediction)
+- RMSE: Average prediction error magnitude
+- MAE: Mean absolute error
+
+6. Applications:
+- Disaster preparedness planning
+- Resource allocation for relief efforts
+- Risk assessment for infrastructure projects
+
+7. Limitations:
+- Assumes linear relationships between features
+- Accuracy depends on data quality
+- Doesn't account for unseen catastrophic events
+
+Model developed using Python scikit-learn.

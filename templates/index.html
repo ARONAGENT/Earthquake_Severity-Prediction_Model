@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nepal Earthquake Risk Assessment</title>
+   <link rel="stylesheet" href="/static/style.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Nepal Earthquake Risk Assessment</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#data">Data Analysis</a></li>
+                    <li><a href="#map">Risk Map</a></li>
+                    <li><a href="#model">Prediction Model</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+                <a href="#contact" class="contact-btn">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+    <div class="container">
+        <div class="hero-content">
+            <h1>NEPAL EARTHQUAKE RISK ASSESSMENT</h1>
+            <p>Comprehensive analysis of seismic risk factors across Nepal's regions using multi-dimensional vulnerability assessment.</p>
+            <a href="#data"><button class="btn btn-success">EXPLORE DATA</button></a>
+        </div>
+    </div>
+</section>
+
+    <!-- Feature Section -->
+    <section class="feature-section" id="about">
+        <div class="container">
+            <div class="feature-content">
+                <div class="feature-image">
+                    <img src="/static/2.gif" alt="Nepal earthquake damage">
+                </div>
+                <div class="feature-text">
+                    <h2>ABOUT OUR ASSESSMENT</h2>
+                    <h3>COMPREHENSIVE RISK ANALYSIS</h3>
+                    <p>Our research combines multiple risk factors to create a holistic view of earthquake vulnerability across Nepal's regions. We analyze hazard intensity, population exposure, housing quality, poverty levels, and overall vulnerability to generate composite severity scores.</p>
+                    <p>The data shows that urban centers like Kathmandu carry high risk due to dense populations, while some rural areas face severe challenges due to infrastructure limitations and high hazard potential.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Data Analysis Section -->
+    <section class="data-section" id="data">
+        <div class="container">
+            <h2 class="section-title">KEY FINDINGS FROM OUR ANALYSIS</h2>
+            
+            <div class="data-cards">
+                <div class="data-card">
+                    <h3>Highest Risk Areas</h3>
+                    <div class="data-number">19</div>
+                    <p>Communities classified in the "Highest" severity category, with Kathmandu N.P. showing the maximum normalized severity score of 10.0.</p>
+                </div>
+                <div class="data-card">
+                    <h3>Average Hazard Intensity</h3>
+                    <div class="data-number">2.87</div>
+                    <p>Mean hazard intensity across all regions, with Mahadevsthan (Sindhuli) showing the highest value of 10.0.</p>
+                </div>
+                <div class="data-card">
+                    <h3>Urban vs Rural Risk</h3>
+                    <div class="data-number">76%</div>
+                    <p>Higher normalized severity in urban centers due to population density, despite some rural areas having higher hazard intensity values.</p>
+                </div>
+            </div>
+            
+            <h3 class="section-title">Top 10 Highest Risk Areas</h3>
+            
+            <div class="data-table-container">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Location</th>
+                            <th>District</th>
+                            <th>Hazard Intensity</th>
+                            <th>Exposure</th>
+                            <th>Housing</th>
+                            <th>Poverty</th>
+                            <th>Vulnerability</th>
+                            <th>Severity Score</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="severity-highest">
+                            <td>Kathmandu N.P.</td>
+                            <td>Kathmandu</td>
+                            <td>2.17</td>
+                            <td>10.00</td>
+                            <td>8.86</td>
+                            <td>1.82</td>
+                            <td>5.34</td>
+                            <td>10.00</td>
+                        </tr>
+                        <tr class="severity-highest">
+                            <td>Lalitpur N.P.</td>
+                            <td>Lalitpur</td>
+                            <td>1.72</td>
+                            <td>2.26</td>
+                            <td>8.40</td>
+                            <td>0.82</td>
+                            <td>4.61</td>
+                            <td>5.37</td>
+                        </tr>
+                        <tr class="severity-highest">
+                            <td>Bharatpur N.P.</td>
+                            <td>Chitawan</td>
+                            <td>2.21</td>
+                            <td>1.47</td>
+                            <td>5.38</td>
+                            <td>2.53</td>
+                            <td>3.96</td>
+                            <td>4.81</td>
+                        </tr>
+                        <tr class="severity-highest">
+                            <td>Madhyapur Thimi N.P.</td>
+                            <td>Bhaktapur</td>
+                            <td>2.45</td>
+                            <td>0.85</td>
+                            <td>8.23</td>
+                            <td>0.89</td>
+                            <td>4.56</td>
+                            <td>4.34</td>
+                        </tr>
+                        <tr class="severity-highest">
+                            <td>Jorpati</td>
+                            <td>Kathmandu</td>
+                            <td>1.91</td>
+                            <td>0.87</td>
+                            <td>8.86</td>
+                            <td>1.82</td>
+                            <td>5.34</td>
+                            <td>4.24</td>
+                        </tr>
+                        <tr class="severity-highest">
+                            <td>Bhaktapur N.P.</td>
+                            <td>Bhaktapur</td>
+                            <td>1.82</td>
+                            <td>0.84</td>
+                            <td>8.23</td>
+                            <td>0.89</td>
+                            <td>4.56</td>
+                            <td>3.91</td>
+                        </tr>
+                        <tr class="severity-highest">
+                            <td>Prithbinarayan N.P.</td>
+                            <td>Gorkha</td>
+                            <td>3.48</td>
+                            <td>0.33</td>
+                            <td>6.44</td>
+                            <td>5.21</td>
+                            <td>5.83</td>
+                            <td>3.88</td>
+                        </tr>
+                        <tr class="severity-highest">
+                            <td>Kamalami N.P.</td>
+                            <td>Sindhuli</td>
+                            <td>2.54</td>
+                            <td>0.40</td>
+                            <td>5.19</td>
+                            <td>6.55</td>
+                            <td>5.87</td>
+                            <td>3.73</td>
+                        </tr>
+                        <tr class="severity-highest">
+                            <td>Kapilakot</td>
+                            <td>Sindhuli</td>
+                            <td>8.02</td>
+                            <td>0.12</td>
+                            <td>5.19</td>
+                            <td>6.55</td>
+                            <td>5.87</td>
+                            <td>3.63</td>
+                        </tr>
+                        <tr class="severity-highest">
+                            <td>Kirtipur N.P.</td>
+                            <td>Kathmandu</td>
+                            <td>1.35</td>
+                            <td>0.67</td>
+                            <td>8.86</td>
+                            <td>1.82</td>
+                            <td>5.34</td>
+                            <td>3.47</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section" id="map">
+        <div class="container">
+            <h2 class="section-title">REGIONAL RISK DISTRIBUTION</h2>
+            <div class="map-container">
+                <div class="map-visual">
+                    <!-- This would be replaced with an actual interactive map -->             
+                      <img src="/static/1.png" alt="" >
+                </div>
+                <div class="map-text">
+                    <h3>Regional Risk Factors</h3>
+                    <p>Our analysis reveals distinct regional patterns in earthquake vulnerability across Nepal:</p>
+                    
+                    <ul class="risk-list">
+                        <li class="highest">Kathmandu Valley: High population density and building vulnerability despite moderate hazard intensity</li>
+                        <li class="highest">Sindhuli District: High hazard intensity combined with rural poverty</li>
+                        <li class="highest">Bhaktapur: Urban density with significant housing vulnerability</li>
+                        <li class="high">Dhading: Moderate risk with significant infrastructure challenges</li>
+                        <li class="high">Lalitpur: Urban center with better housing quality than surrounding areas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prediction Model Section -->
+    <section class="model-section" id="model">
+        <div class="container">
+            <h2 class="section-title">EARTHQUAKE SEVERITY PREDICTION</h2>
+            <div class="model-container">
+                <div class="input-form">
+                    <h3>Input Parameters</h3>
+                    <form id="prediction-form" method="post" action="/reqmodel/">
+                        {% csrf_token %} 
+                        <div class="form-group">
+                            <label for="hazard">Hazard (0.0 - 10.0):</label>
+                            <input type="number" step="0.01" id="hazard" name="hazard" min="0" max="10" required >
+                        </div>
+                        <div class="form-group">
+                            <label for="exposure">Exposure (0.0 - 10.0):</label>
+                            <input type="number" step="0.01" id="exposure" name="exposure" min="0" max="10" required class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="housing">Housing (1.17 - 9.94):</label>
+                            <input type="number" step="0.01" id="housing" name="housing" min="1.17" max="9.94" required class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="poverty">Poverty (0.0 - 10.0):</label>
+                            <input type="number" step="0.01" id="poverty" name="poverty" min="0" max="10" required class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="vulnerability">Vulnerability (1.62 - 8.83):</label>
+                            <input type="number" step="0.01" id="vulnerability" name="vulnerability" min="1.62" max="8.83" required class="form-control">
+                        </div>
+                        <button type="submit" class="submit-btn">Check Severity</button>
+                    </form>
+                </div>
+                <div class="result-display">
+                    <h3>Severity Assessment Results</h3>
+                    <div class="result-card">
+                        <h4>Overall Risk Level</h4>
+                        <div class="prediction-level">High</div>
+                        <p>Based on historical data and current conditions, this location shows significant earthquake risk factors.</p>
+                    </div>
+                    <div class="result-card">
+                        <h4>Component Analysis</h4>
+                        <p><strong>Hazard Intensity:</strong> 2.17/10.00</p>
+                        <p><strong>Exposure:</strong> 10.00/10.00</p>
+                        <p><strong>Housing Vulnerability:</strong> 8.86/10.00</p>
+                        <p><strong>Socioeconomic Vulnerability:</strong> 1.82/10.00</p>
+                        <p><strong>Overall Vulnerability:</strong> 5.34/10.00</p>
+                        <p><strong>Normalized Severity Score:</strong> 10.00/10.00</p>
+                    </div>
+                    <div class="result-card">
+                        <h4>Recommendations</h4>
+                        <p>1. Consider structural reinforcement for this building type</p>
+                        <p>2. Develop household emergency preparedness plan</p>
+                        <p>3. Ensure adequate insurance coverage for seismic events</p>
+                        <p>4. Stay informed about local building code updates</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Nepal Earthquake Risk Assessment</h3>
+                    <p>Comprehensive seismic risk analysis for Nepal's communities.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#data">Data Analysis</a></li>
+                        <li><a href="#map">Risk Map</a></li>
+                        <li><a href="#model">Prediction Model</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#methodology">Methodology</a></li>
+                        <li><a href="#publications">Publications</a></li>
+                        <li><a href="#datasets">Datasets</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column" id="contact">
+                    <h3>Contact</h3>
+                    <p>Email: info@nepalearthquakerisk.org</p>
+                    <p>Phone: +977 1 XXXX XXX</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Nepal Earthquake Risk Assessment Project. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

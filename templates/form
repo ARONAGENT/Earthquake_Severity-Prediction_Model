@@ -1,0 +1,27 @@
+<form id="prediction-form" method="post" action="/reqmodel/">
+                        <div class="form-group">
+                            <label for="hazard">Hazard (0.0 - 10.0):</label>
+                            <input type="number" step="0.01" id="hazard" name="hazard" min="0" max="10" required >
+                        </div>
+                        <div class="form-group">
+                            <label for="exposure">Exposure (0.0 - 10.0):</label>
+                            <input type="number" step="0.01" id="exposure" name="exposure" min="0" max="10" required class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="housing">Housing (1.17 - 9.94):</label>
+                            <input type="number" step="0.01" id="housing" name="housing" min="1.17" max="9.94" required class="form-control"><br><br>
+                        </div>
+                        <div class="form-group">
+                            <label for="poverty">Poverty (0.0 - 10.0):</label>
+                            <input type="number" step="0.01" id="poverty" name="poverty" min="0" max="10" required class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="poverty">Poverty (0.0 - 10.0):</label>
+                            <input type="number" step="0.01" id="poverty" name="poverty" min="0" max="10" required class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="vulnerability">Vulnerability (1.62 - 8.83):</label>
+                            <input type="number" step="0.01" id="vulnerability" name="vulnerability" min="1.62" max="8.83" required class="form-control">
+                        </div>
+                        <button type="submit" class="submit-btn">Generate Prediction</button>
+                    </form>
