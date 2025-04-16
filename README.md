@@ -81,7 +81,10 @@ This Django app includes:
 
 4. **Severity Result Display**  
 
-📸 All screenshots are available in the `screenshots/` directory.
+📸 All screenshots are available in the `/prediction model earthquake/
+/` directory.
+<br>
+
 ![4](https://github.com/user-attachments/assets/a7f90bd8-9662-43ba-99a6-27854200118f)
 
 ---
