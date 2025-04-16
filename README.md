@@ -107,9 +107,8 @@ This Django app includes:
 ### ▶️ How to Run the Project
 1. Clone the repository
 2. Install dependencies: `pip install -r requirements.txt`
-3. Run migrations: `python manage.py runserver`
-4. Start the server: `python manage.py runserver`
-5. Access via `http://127.0.0.1:8000/`
+3. Start the server: `python manage.py runserver`
+4. Access via `http://127.0.0.1:8000/`
 
 To explore the analysis, open `nepal_earthquake.ipynb` in Jupyter Notebook.
 
